@@ -1,0 +1,28 @@
+@startuml
+title Branching
+
+[*] --> Branch : Topic branch\n(off master)
+Branch : git checkout -b ...
+Branch : feature/*
+Branch : bugfix/*
+Branch : docs/*
+Branch : translations/*
+
+Branch --> Changes : Developer\nwrites code
+Changes : git add -v .
+Changes : git commit -m ...
+Changes : git push -u origin ...
+
+Changes -> MergeRequest : Create or update\nmerge request
+MergeRequest : MR description = Change log
+MergeRequest : Checks & tests run automatically
+MergeRequest : (Static code analysis, unit tests)
+MergeRequest : ReviewApp is deployed
+
+MergeRequest --> MergeRequest : Code review, comments
+MergeRequest --> MergeRequest : Verify ReviewApp
+MergeRequest --> Changes : Incorporate feedback\nfrom merge request
+
+MergeRequest --> [*] : Merge changes\n(delete branch)
+
+@enduml
