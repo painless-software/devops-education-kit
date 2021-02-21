@@ -39,3 +39,8 @@ MergeRequest --> [*] : Merge changes,\ndelete topic branch
 
 @enduml
 ```
+
+Related Topics
+--------------
+
+- [Build images](devops-environments.md) ➜ Deployment

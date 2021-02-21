@@ -152,4 +152,10 @@ end note
 ```
 
 Integration should be deleted and recreated afresh regularly (e.g. each week).
+
 In an advanced approach, we could swap Production and Integration on each deployment.
+
+Related Topics
+--------------
+
+- [Release notes](devops-branching.md) ➜ MR description
