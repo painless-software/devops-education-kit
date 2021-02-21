@@ -1,5 +1,5 @@
 Branching + Development
------------------------
+=======================
 
 - Keep it as simple as possible
 - A single main branch + topic branches (short-lived!)

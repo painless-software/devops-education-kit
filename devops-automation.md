@@ -1,5 +1,5 @@
 Easy to Get Started
--------------------
+===================
 
 - Minimal prerequisites for (local) development
 - One command to take off, avoid custom solutions + tools
