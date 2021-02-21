@@ -5,4 +5,14 @@ Easy to Get Started
 - One command to take off, avoid custom solutions + tools
 - Fully automated deployment, fully scripted one-off setup
 
-> e.g. `docker-compose up` (or similar)
+
+```console
+# fast, well-known patterns for local development, e.g.
+docker-compose up
+```
+
+```console
+# semi-automation (instead of manual setup instructions), e.g.
+terraform plan
+terraform apply
+```
