@@ -13,16 +13,17 @@ Changes : git add -v .
 Changes : git commit -m ...
 Changes : git push -u origin ...
 
-Changes -> MergeRequest : Create or update\nmerge request
-MergeRequest : MR description = Change log
+Changes -> MergeRequest : Create or\nupdate MR
+MergeRequest : MR description: Change log
 MergeRequest : Checks & tests run automatically
-MergeRequest : (Static code analysis, unit tests)
-MergeRequest : ReviewApp is deployed
+MergeRequest : Review app is deployed
 
-MergeRequest --> MergeRequest : Code review, comments
-MergeRequest --> MergeRequest : Verify ReviewApp
-MergeRequest --> Changes : Incorporate feedback\nfrom merge request
+MergeRequest -> MergeRequest : Static\ncode\nanalysis
+MergeRequest -> MergeRequest : Unit\ntests
+MergeRequest -> MergeRequest : Code review\ncomments
+MergeRequest -> MergeRequest : Manually verify\nreview app
+MergeRequest --> Changes : Incorporate\nreview\nfeedback
 
-MergeRequest --> [*] : Merge changes\n(delete branch)
+MergeRequest --> [*] : Merge changes,\ndelete topic branch
 
 @enduml
