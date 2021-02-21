@@ -1,3 +1,4 @@
+```plantuml
 @startuml
 title Branching
 
@@ -27,3 +28,4 @@ MergeRequest --> Changes : Incorporate\nreview\nfeedback
 MergeRequest --> [*] : Merge changes,\ndelete topic branch
 
 @enduml
+```

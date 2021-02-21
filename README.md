@@ -22,11 +22,7 @@ Branching + Development
 
 > Use branching to ensure only working code is merged into your main branch. Don't use it to control feature releases.
 
-```plantuml
-@startuml
-!include https://gitlab.com/painless-software/devops-education-kit/-/raw/master/devops-branching.plantuml
-@enduml
-```
+[diagram](devops-branching.md)
 
 Environments + Deployment
 -------------------------
@@ -45,8 +41,4 @@ Environments + Deployment
 
 > Deploy every single, working feature directly. Give your PO control over the feature flags – not your release ceremony.
 
-```plantuml
-@startuml
-!include https://gitlab.com/painless-software/devops-education-kit/-/raw/master/devops-environments.plantuml
-@enduml
-```
+[diagram](devops-environments.md)
