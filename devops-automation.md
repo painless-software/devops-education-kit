@@ -8,6 +8,7 @@ Easy to Get Started
 
 ```console
 # fast, well-known patterns for local development, e.g.
+docker-compose build --pull
 docker-compose up
 ```
 
