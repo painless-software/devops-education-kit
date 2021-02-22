@@ -12,6 +12,8 @@ Branching + Development
 @startuml
 title Branching
 
+[*] --> [*]: master
+
 [*] --> Branch : Topic branch\n(off master)
 Branch : git checkout -b ...
 Branch : feature/*
@@ -24,18 +26,23 @@ Changes : git add -v .
 Changes : git commit -m ...
 Changes : git push -u origin ...
 
-Changes -> MergeRequest : Create or\nupdate MR
-MergeRequest : MR description: Change log
-MergeRequest : Checks & tests run automatically
-MergeRequest : Review app is deployed
+Changes --> mr : Create or\nupdate MR
+mr : MR description as Change log
 
-MergeRequest -> MergeRequest : Static\ncode\nanalysis
-MergeRequest -> MergeRequest : Unit\ntests
-MergeRequest -> MergeRequest : Code review\ncomments
-MergeRequest -> MergeRequest : Manually verify\nreview app
-MergeRequest --> Changes : Incorporate\nreview\nfeedback
+state "Merge Request" as mr {
+  state "Static\ncode\nanalysis" as checks
+  state "Unit\ntests" as tests
+  state "Review\napp" as reviewapp
 
-MergeRequest --> [*] : Merge changes,\ndelete topic branch
+  checks -> tests
+  tests -> reviewapp
+
+  state "Code\nreview" as codereview
+}
+
+mr --> Changes : Incorporate\nreview\nfeedback
+
+mr --> [*] : Merge changes,\ndelete topic branch
 
 @enduml
 ```
