@@ -12,9 +12,9 @@ Branching + Development
 @startuml
 title Branching
 
-[*] --> [*]: master
+[*] --> [*]: main
 
-[*] --> Branch : Topic branch\n(off master)
+[*] --> Branch : Topic branch\n(off main)
 Branch : git checkout -b ...
 Branch : feature/*
 Branch : bugfix/*
