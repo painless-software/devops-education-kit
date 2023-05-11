@@ -27,7 +27,7 @@ Continuous Delivery – CI/CD
 ++++ Containerization
 +++ Automated\n     tests
 ++++ Unit tests (TDD)
-++++ Acceptance\ntest (BDD)
+++++ Acceptance\ntests (BDD)
 ++++ Code coverage\n(≈ 100%)
 +++ Automatic\nquality gates
 ++++ Fully automatic\ndeployment
