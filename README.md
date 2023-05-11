@@ -17,3 +17,8 @@ Dev(Sec)Ops Education Kit
 ---------------------------
 
 *Deploy every single, working feature directly. Stop using sprint reviews for release decisions. Give your PO control over feature flags.*
+
+[Continuous Delivery](cicd-mindmap.md)
+---------------------
+
+*A set of practices and principles in software engineering aimed at building, testing, and releasing software safely, faster, more frequently, and in a sustainable way.*
